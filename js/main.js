@@ -20,3 +20,11 @@ toggle. addEventListener('click',()=>{
 
 })
 
+var descimg = document.querySelector('.glavniimg')
+var btnimg = document.querySelector('.maskimg')
+
+btnimg.addEventListener('click',()=>{
+   descimg.src=btnimg.src
+})
+
+

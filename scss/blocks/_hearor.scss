@@ -1,0 +1,25 @@
+.hearor{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    &__image{
+        position:relative;
+   display: inline-block;
+        margin-top: 50px;
+        width: 500px;
+        height: 600px;
+        .glavniimg{
+            z-index: -1;
+            width: 500px;
+            height: 600px;
+            position: absolute;
+        }
+        .maskimg{
+            width: 60px;
+            height: 80px;
+            left:0px ;
+        
+            
+        }
+    }
+}
