@@ -58,6 +58,7 @@ korzinkabar.addEventListener('click',() =>{
       var card = document.createElement('div')
       card.style.position='absolute'
       card.style.right='0px'
+      card.style.top='0px'
       card.style.width="300px"
       card.style.height='600px'
       card.textContent="hello"
