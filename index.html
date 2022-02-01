@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,500;0,600;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -41,7 +43,7 @@
         <li class="nav__item">
             <a class="nav__item__link" href="#">
 
-                <img class="img" src="/img/Group 14.png" alt="">
+                <img  class="imgkor" src="/img/Group 14.png" alt="">
 
              
                 
@@ -53,7 +55,7 @@
    <section class="container hearor">
 
        <div class="hearor__image">
-           <img class="glavniimg" src="" alt="">
+           <img class="glavniimg" src="/img/img1.png" alt="">
 
            <img class="maskimg" src="/img/img1.png" alt="">         
            <img class="maskimg" src="/img/img2.png" alt=""> 
@@ -64,9 +66,98 @@
        </div>
 
        <div class="hearor__titel">
+             <h3>Пижама для девочек</h3>
+             <p>Арт. 02765/46</p>
+
+             <p class="hearor__titel__star">
+                Отзывы
+                <img class="stars" src="/img/Vector.png" alt="">
+                <img class="stars" src="/img/Vector.png" alt="">
+                <img class="stars" src="/img/Vector.png" alt="">
+                <img class="stars" src="/img/Vector.png" alt="">
+                <img class="stars" src="/img/Vector.png" alt="">
+                14 отзывов <img src="/img/Line 15.png" alt="">
+             </p>
+             <b>800 ₽<p>1 500 ₽</p><img src="/img/Line 15.png" alt=""></b>
+             <a class="sicid" href="#">
+                 <button class="btn1">скидка -36%</button>
+                 <button class="btn2">акция -20%</button>
+             </a>
+             <select class="select"  name="width" id="olcham">
+                 <option value="0">Выбрать размер</option>
+                 <option value="1">X</option>
+                 <option value="2">XL</option>
+                 <option value="3">XXL</option>
+                 <option value="4">L</option>
+
+             </select>
+             <p>Определить размер</p>
+      
+             <div class="buttons">
+                 <button id="plus" type="submit" class="plus">+</button>
+                 <button id="resalt" type="submit" class="resalt">0</button>
+                 <button id="minus" type="submit" class="minus">-</button>
+                 <a class="dobavit" href="#">Добавить в корзину</a>
+                 <img src="/img/like" alt="">
+             </div>
+             <a class="link" href="#">Купить в 1 клик</a>
+             <div class="chiziq"></div>
+
+            <div class="tovar"> 
+                <a class="phone" href="#"><img src="/img/Group.png" alt=""> Описание товара</a>
+                <a class="phone" href="#"><img src="/img/time" alt=""> Описание товара</a>
+                <a class="phone" href="#"><img src="/img/card" alt=""> Описание товара</a>
+            </div>
 
        </div>
 
+   </section>
+   <section class="container informations">
+                 <a href="#">Посмотреть все стили</a>
+       <div class="informations__bigimg">
+        <img class="corzina0" src="/img/kozina" alt="">
+           <img class="informations__bigimg__image" src="/img/bgimg.png" alt="">
+       </div>
+
+       <div class="informations__smollimg">
+
+           <img class="corzina1" src="/img/kozina" alt="">
+           <img class="corzina2" src="/img/kozina" alt="">
+           <img class="corzina3" src="/img/kozina" alt="">
+           <img class="corzina4" src="/img/kozina" alt="">
+
+           <img class="informations__smollimg__images" src="/img/smollimg1.png" alt="">
+           <img class="informations__smollimg__images" src="/img/smollimg2.png" alt="">
+           <img class="informations__smollimg__images" src="/img/smollimg3.png" alt="">
+           <img class="informations__smollimg__images" src="/img/smollimg4.png" alt="">
+       </div>
+
+   </section>
+   <section class="container footer">
+
+       <ul class="footer__navback navback">
+           <b class="navback__titel">покупателям</b>
+           
+           <li class="navback__link"><a class="navback__link__item" href="#">Каталог</a></li>
+           <li class="navback__link"><a class="navback__link__item" href="#">Акции</a></li>
+           <li class="navback__link"><a class="navback__link__item" href="#">Бренды</a></li>
+       </ul>
+
+       <ul class="footer__sitebar sitebar">
+        <b class="sitebar__titel">о нас</b>
+
+           <li class="sitebar__link"><a class="sitebar__link__item" href="#">О компании</a></li>
+           <li class="sitebar__link"><a class="sitebar__link__item" href="#">Новости</a></li>
+           <li class="sitebar__link"><a class="sitebar__link__item" href="#">Команда</a></li>
+       </ul>
+
+       <form class="footer__form form">
+           <label class="form__lable" for="leble">Узнайте первыми о новинках и акциях</label>
+           <br>
+           <input placeholder="Адрес электронной почты" class="form__input" type="email">
+           <div class="form__chiziq"></div>
+           <button class="form__button" type="submit">Подписаться</button>
+       </form>
    </section>
 </body>
 <script src="./js/main.js"></script>

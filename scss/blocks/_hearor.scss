@@ -2,24 +2,361 @@
     width: 100%;
     margin-top: 50px;
     display: flex;
+    position: relative;
     &__image{
         position:relative;
-   display: inline-block;
+   display:block;
         margin-top: 50px;
         width: 500px;
         height: 600px;
         .glavniimg{
+            display:flex;
             z-index: -1;
             width: 500px;
             height: 600px;
             position: absolute;
         }
         .maskimg{
+            display: block;
+            margin: 10px 20px;
+            z-index: 0;
             width: 60px;
             height: 80px;
             left:0px ;
         
             
+        }
+    }
+    &__titel{
+        width: 50%;
+        display: block;
+        padding: 50px 40px ;
+        h3{
+            font-family: serif;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        p{
+            margin:0px 0px 15px 0px ;
+            font-size: 10px;
+        }
+        b{ 
+            width: 200px;
+            height: 30px;
+            align-items: center;
+            display: flex;
+            p{
+                margin-top: 15px;
+                margin-left: 10px;
+                color: rgba(130, 130, 130, 1);
+                font-size: 10px;
+                text-decoration:line-through;
+            }
+            img{
+                margin-left: 20px;
+            }
+        }
+        .sicid{
+            text-decoration: none;
+            display: flex;
+            .btn2{
+                margin-left: 20px;
+            }
+        }
+        .select{
+            margin-top: 20px;
+            width: 300px;
+            height: 30px;
+        }
+        .buttons{
+            display: flex;
+            .plus{
+                width: 30px;
+                margin-right: 5px;
+            }
+            .resalt{
+                width: 30px;
+                margin-right: 5px;
+            }
+            .minus{
+                width: 30px;
+                margin-right: 5px;
+            }
+            .dobavit{
+                padding: 5px;
+                background-color: rgb(31, 25, 25);
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .link{
+            // text-decoration: rgba(51, 51, 51, 1);
+            color:rgba(51, 51, 51, 1);
+        }
+        .chiziq{
+            width: 400px;
+            height: 2px;
+            background-color: rgba(196, 196, 196, 1);
+            margin-top: 20px;
+        }
+        .tovar{
+          display: block;
+          width: 150px;
+          .phone{
+              
+              color:rgba(51, 51, 51, 1) ;
+              .img{
+                  margin-right: 20px;
+              }
+          }
+        }
+
+      
+    }
+}
+@media screen and (max-width: 756px){
+    .hearor{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        &__image{
+            position:relative;
+       display:block;
+            margin-top: 50px;
+            width: 335px;
+            height: 600px;
+            .glavniimg{
+                display:flex;
+                z-index: -1;
+                width: 500px;
+                height: 600px;
+                position: absolute;
+            }
+            .maskimg{
+                display: block;
+                margin: 10px 20px;
+                z-index: 0;
+                width: 60px;
+                height: 80px;
+                left:0px ;
+            
+                
+            }
+        }
+        &__titel{
+            width: 50%;
+            display: block;
+            padding: 50px 40px ;
+            h3{
+                font-family: serif;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+            p{
+                margin:0px 0px 15px 0px ;
+                font-size: 10px;
+            }
+            b{ 
+                width: 200px;
+                height: 30px;
+                align-items: center;
+                display: flex;
+                p{
+                    margin-top: 15px;
+                    margin-left: 10px;
+                    color: rgba(130, 130, 130, 1);
+                    font-size: 10px;
+                    text-decoration:line-through;
+                }
+                img{
+                    margin-left: 20px;
+                }
+            }
+            .sicid{
+                text-decoration: none;
+                display: flex;
+                .btn2{
+                    width: 100px;
+                    
+                    margin-left: 20px;
+                }
+                .btn1{
+                    width: 100px;
+                }
+            }
+            .select{
+                margin-top: 20px;
+                width: 200px;
+                height: 30px;
+            }
+            .buttons{
+                display: flex;
+                .plus{
+                    width: 30px;
+                    margin-right: 5px;
+                }
+                .resalt{
+                    width: 30px;
+                    margin-right: 5px;
+                }
+                .minus{
+                    width: 30px;
+                    margin-right: 5px;
+                }
+                .dobavit{
+                    padding: 5px;
+                    background-color: rgb(31, 25, 25);
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            .link{
+                // text-decoration: rgba(51, 51, 51, 1);
+                color:rgba(51, 51, 51, 1);
+            }
+            .chiziq{
+                width: 80%;
+                height: 2px;
+                background-color: rgba(196, 196, 196, 1);
+                margin-top: 20px;
+            }
+            .tovar{
+              display: block;
+              width: 150px;
+              .phone{
+                  
+                  color:rgba(51, 51, 51, 1) ;
+                  .img{
+                      margin-right: 20px;
+                  }
+              }
+            }
+    
+          
+        }
+    }
+} 
+@media screen and (max-width: 500px){
+    .hearor{
+        width: 100%;
+        margin-top: 50px;
+        display:block;
+        &__image{
+            position:relative;
+       display:block;
+            margin-top: 50px;
+            width:100%;
+            height: 600px;
+            .glavniimg{
+                display:flex;
+                z-index: -1;
+                width: 481px;
+                height: 600px;
+                position: absolute;
+            }
+            .maskimg{
+                display: block;
+                margin: 10px 20px;
+                z-index: 0;
+                width: 60px;
+                height: 80px;
+                left:0px ;
+            
+                
+            }
+        }
+        &__titel{
+            width: 100%;
+            display: block;
+            padding: 50px 40px ;
+            h3{
+                font-family: serif;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+            p{
+                margin:0px 0px 15px 0px ;
+                font-size: 10px;
+            }
+            b{ 
+                width: 200px;
+                height: 30px;
+                align-items: center;
+                display: flex;
+                p{
+                    margin-top: 15px;
+                    margin-left: 10px;
+                    color: rgba(130, 130, 130, 1);
+                    font-size: 10px;
+                    text-decoration:line-through;
+                }
+                img{
+                    margin-left: 20px;
+                }
+            }
+            .sicid{
+                text-decoration: none;
+                display: flex;
+                .btn1{
+                    width: 120px;
+                }
+                .btn2{
+                    width: 120px;
+                    margin-left: 20px;
+                }
+            }
+            .select{
+                margin-top: 20px;
+                width: 300px;
+                height: 30px;
+            }
+            .buttons{
+                display: flex;
+                .plus{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+                .resalt{
+                    height: 30px;
+                    width: 30px;
+                    margin-right: 5px;
+                }
+                .minus{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+                .dobavit{
+                    padding: 5px;
+                    background-color: rgb(31, 25, 25);
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            .link{
+                // text-decoration: rgba(51, 51, 51, 1);
+                color:rgba(51, 51, 51, 1);
+            }
+            .chiziq{
+                width:95%;
+                height: 2px;
+                background-color: rgba(196, 196, 196, 1);
+                margin-top: 20px;
+            }
+            .tovar{
+              display: block;
+              width: 150px;
+              .phone{
+                  
+                  color:rgba(51, 51, 51, 1) ;
+                  .img{
+                      margin-right: 20px;
+                  }
+              }
+            }
+    
+          
         }
     }
 }
