@@ -51,19 +51,39 @@ plusel.addEventListener("submit",()=>{
 
 var korzinkabar = document.querySelector('.imgkor')
 var sec = document.querySelector('.hearor')
-korzinkabar.style.background='red'
 
 korzinkabar.addEventListener('click',() =>{
 
       var card = document.createElement('div')
+     
       card.style.position='absolute'
       card.style.right='0px'
+      card.style.transition='1s easy-in-out'
       card.style.top='0px'
       card.style.width="300px"
       card.style.height='600px'
-      card.textContent="hello"
-      card.style.background='red'
+      card.textContent="Sizning maxsulotlar"
+      card.style.background='DarkGray'
+
+      let zakript = document.createElement('button')
+      zakript.textContent="x"
+      zakript.style.marginLeft='130px'
+      zakript.addEventListener('click',()=>{ 
+         card.style.display='none '
+
+
+      })
+      var images = document.querySelector('.informations__smollimg__images')
+      let buttonkor = document.querySelector('.corzina1')
+      buttonkor.addEventListener('click',()=>{
+         alert("yangi maxsulot qo'shildi")
+           let cloneitem = images.cloneNode(true)
+           card.appendChild(cloneitem)
+      })
+      
    console.log(card)
-  
+
+   card.appendChild(zakript)
   sec.appendChild(card)
+  
 })
