@@ -45,7 +45,7 @@ var plusel = document.getElementById('plus')
 
 plusel.addEventListener("submit",()=>{
   
-   resaltel.textcontent + 1
+   resaltel.innerText++ 
   
 })
 
@@ -60,26 +60,39 @@ korzinkabar.addEventListener('click',() =>{
       card.style.right='0px'
       card.style.transition='1s easy-in-out'
       card.style.top='0px'
-      card.style.width="300px"
-      card.style.height='600px'
+      card.style.padding='10px'
+      card.style.width="400px"
+      card.style.height='auto'
       card.textContent="Sizning maxsulotlar"
       card.style.background='DarkGray'
 
       let zakript = document.createElement('button')
       zakript.textContent="x"
-      zakript.style.marginLeft='130px'
+      zakript.style.marginLeft='120px'
       zakript.addEventListener('click',()=>{ 
-         card.style.display='none '
+         card.style.opacity='0'
 
 
       })
-      var images = document.querySelector('.informations__smollimg__images')
-      let buttonkor = document.querySelector('.corzina1')
-      buttonkor.addEventListener('click',()=>{
-         alert("yangi maxsulot qo'shildi")
-           let cloneitem = images.cloneNode(true)
-           card.appendChild(cloneitem)
-      })
+      var images = document.querySelectorAll('.box-images')
+      let buttonkor = document.getElementsByClassName('corzina')
+      
+     
+      for(let i = 0;i<buttonkor.length;i++){
+         buttonkor[i].addEventListener('click',()=>{
+            alert("yangi maxsulot qo'shildi")
+           for(let a = 0;a<images.length;a++){
+            let cloneitem= images[a].cloneNode(true)
+            card.appendChild(cloneitem)
+           }
+         })
+      }
+
+      // buttonkor.addEventListener('click',(stop)=>{
+      //    alert("yangi maxsulot qo'shildi")
+      //      let cloneitem = images.cloneNode(true)
+      //      card.appendChild(cloneitem)
+      // })
       
    console.log(card)
 
