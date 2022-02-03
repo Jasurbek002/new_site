@@ -38,16 +38,22 @@ for(let i = 0;i<star.length;i++){
    })
 }
 
-var plusel = document.getElementById('plus')
- var   resaltel= document.getElementById('resalt')
-  var  minusel =document.getElementById('minus')
-
-
-plusel.addEventListener("submit",()=>{
-  
-   resaltel.innerText++ 
-  
+var plusel = document.querySelector('.plus')
+ var   resaltel= document.querySelector('.resalt')
+  var  minusel =document.querySelector('.minus')
+minusel.addEventListener("click",function(){
+   let satartNumber=resaltel.textContent-0
+   if(resaltel.textContent>0)
+resaltel.textContent--
 })
+
+plusel.addEventListener("click",function(){
+  let satartNumber=resaltel.textContent-0
+  resaltel.textContent++
+   // resaltel.innerText++
+})
+
+
 
 var korzinkabar = document.querySelector('.imgkor')
 var sec = document.querySelector('.hearor')
@@ -87,7 +93,15 @@ korzinkabar.addEventListener('click',() =>{
            }
          })
       }
-
+      var dobovidcor = document.querySelector('.dobavit')
+      var glavniimg = document.querySelector('.glavniimg')
+      
+      dobovidcor.addEventListener('click',()=>{
+      
+         var cretimg = glavniimg.cloneNode(true)
+         card.appendChild(cretimg)
+      
+      })
       // buttonkor.addEventListener('click',(stop)=>{
       //    alert("yangi maxsulot qo'shildi")
       //      let cloneitem = images.cloneNode(true)

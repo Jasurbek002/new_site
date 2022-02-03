@@ -44,12 +44,13 @@
             // width: 280px;
             .corzina{
                 opacity: 0;
-               margin: 40%;
+               margin: 30%;
                 position: absolute;
               
             }
             .corzina:hover{
               opacity: 1;
+              padding: 50px;
               backdrop-filter: blur(10px);
               
             }
